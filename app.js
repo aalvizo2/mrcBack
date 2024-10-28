@@ -6,6 +6,8 @@ const bodyParser= require('body-parser')
 //routes call
 const login= require('./routes/auth.js')
 const clientes= require('./routes/clientes')
+const producto= require('./routes/producto')
+const provedores= require('./routes/provedores')
 
 //PORT settings
 const PORT= process.env.PORT || 4000
@@ -37,7 +39,8 @@ app.get('/', (req, res) =>{
 
 app.use('/', login)
 app.use('/', clientes)
-
+app.use('/', producto)
+app.use('/', provedores)
 
 
 

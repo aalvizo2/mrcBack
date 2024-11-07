@@ -18,7 +18,7 @@ const PORT= process.env.PORT || 4000
 
 //Cors setthings 
 const corsOptions={
-    origin: 'http://localhost:5174',
+    origin: 'http://localhost:5174' || 'https://aalvizo2.github.io/mrcFront/',
     methods: ['GET', 'POST', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization'], 
     optionsSuccessStatus: 200
